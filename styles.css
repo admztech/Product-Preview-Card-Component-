@@ -1,0 +1,124 @@
+:root {
+  --clr-primary-400: hsl(158, 36%, 37%);
+  --clr-primary-500: hsl(158, 36%, 20%);
+  --crl-secondary-200: hsl(30, 38%, 92%);
+
+  --crl--neutral-900: hsl(212, 21%, 14%);
+  --crl--neutral-400: hsl(228, 12%, 48%);
+  --crl--neutral-100: hsl(0, 0%, 100%);
+
+  --fw-regular: 500;
+  --fw-bold: 700;
+
+  --ff-accent: "Fraunces", serif;
+  --ff-base: "Montserrat", sans-serif;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+html,
+body {
+  height: 100%;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+h1 {
+  line-height: 1;
+}
+/*avoidng the text overflow*/
+p,
+h1 {
+  overflow-wrap: break-word;
+}
+body {
+  font-family: var(--ff-base);
+  font-weight: var(--fw-regular);
+  color: var(--crl--neutral-400);
+  font-size: 0.875rem;
+  background-color: var(--crl-secondary-200);
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+  margin: 1rem;
+  line-height: 1.6;
+}
+.flex-group {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.visually-hidden:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+.button {
+  cursor: pointer;
+  border: 0;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  display: inline-flex;
+  gap: 0.75rem;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--clr-primary-400);
+  color: var(--crl--neutral-100);
+  font-weight: var(--fw-bold);
+  font-size: 0.925rem;
+  border-radius: 0.5rem;
+}
+.button[data-icon="shoping-cart"]::before {
+  content: "";
+  background-image: url(images/icon-cart.svg);
+  width: 15px;
+  height: 16px;
+}
+.button:is(:hover, :focus) {
+  background-color: var(--clr-primary-500);
+}
+.product {
+  --content-padding: 1.5rem;
+  background-color: var(--crl--neutral-100);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  display: grid;
+  max-width: 600px;
+}
+@media (min-width: 600px) {
+  .product {
+    grid-template-columns: 1fr 1fr;
+    --content-padding: 2rem;
+  }
+}
+.product-content {
+  padding: 1.5rem;
+  display: grid;
+  gap: 1rem;
+}
+.product-category {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 0.8125rem;
+}
+.product-title {
+  color: var(--crl--neutral-900);
+  font-size: 2rem;
+  font-family: var(--ff-accent);
+}
+.product-price {
+  font-size: 2rem;
+  font-family: var(--ff-accent);
+  color: var(--clr-primary-400);
+}
