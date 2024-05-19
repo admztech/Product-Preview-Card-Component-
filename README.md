@@ -21,7 +21,7 @@ In this challenge, build the Product preview card component for mobile and deskt
 - Mobile-first workflow
 
 ### What I learned
-Flexbox for Responsive Design: This challenge solidified my understanding of how CSS Flexbox can create responsive layouts for mobile and desktop screens (like the product preview card).
+This challenge solidified my understanding of using CSS Flexbox to create responsive layouts for mobile and desktop screens. 
 
 ## Author
 
