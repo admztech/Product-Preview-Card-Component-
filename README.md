@@ -5,7 +5,7 @@ This is a solution to the [Social links profile challenge on Frontend Mentor](ht
 
 ### Links
 
-- [Solution]()
+- [Solution](https://www.frontendmentor.io/solutions/product-preview-card-component-vlixot70vB)
 - [Live](https://admztech.github.io/Product-Preview-Card-Component-/)
 <hr>
 
