@@ -6,7 +6,7 @@ This is a solution to the [Social links profile challenge on Frontend Mentor](ht
 ### Links
 
 - [Solution]()
-- [Live]()
+- [Live](https://admztech.github.io/Product-Preview-Card-Component-/)
 <hr>
 
 ## About The Project
